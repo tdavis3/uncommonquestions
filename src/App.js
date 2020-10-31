@@ -9,7 +9,7 @@ function App() {
         <p>
           I love you mom :)
         </p>
-        - TDIII
+        - TDIII Group
       </header>
     </div>
   );
