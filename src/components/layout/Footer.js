@@ -7,6 +7,7 @@ const useStyles = makeStyles(theme => ({
         // backgroundColor: 'white',
         display: "flex",
         justifyContent: "space-around",
+        alignItems: "baseline",
         position: 'absolute',
         bottom: 0,
         width: '100%',
