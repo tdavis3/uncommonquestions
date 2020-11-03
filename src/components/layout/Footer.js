@@ -15,26 +15,38 @@ const useStyles = makeStyles(theme => ({
         marginTop: theme.spacing(3),
         padding: 15,
         boxSizing: "border-box",
-        color: 'white'
+        color: "lightgrey"
+    },
+    contact: {
+        "&:hover": {
+            color: 'white'
+        },
+        textDecoration: "none",
+        color: "lightgrey"
     }
 }));
 
 function Copyright() {
     return (
-        <Typography variant="body2">
-            {'© '}{new Date().getFullYear()}{' '} TDIII Group, LLC
+        <Typography>
+            {'© '}{' '} Uncommon Questions {new Date().getFullYear()}
         </Typography>
     );
 }
 
+function Contact() {
+    const classes = useStyles();
+    return (
+        <a href={"mailto: info@uncommonquestions.org"} className={classes.contact}>info@uncommonquestions.org</a>
+    );
+}
 
 const Footer = () => {
     const classes = useStyles();
-
     return (
         <footer className={classes.root}>
-            <Typography>Uncommon Questions</Typography>
             <Copyright/>
+            <Contact/>
         </footer>
     );
 };
