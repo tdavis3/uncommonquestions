@@ -10,6 +10,8 @@ const questions = [
     1000,
     "Do you want cryptocurrencies to overhaul the US financial system?",
     1000,
+    "Should masks be legally mandated for all persons to wear?",
+    1000,
     "Is Kanye West crazy or a genius?",
     1000
 ];
