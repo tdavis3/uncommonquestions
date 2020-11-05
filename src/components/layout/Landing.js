@@ -1,9 +1,9 @@
 import React from "react";
-
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import {Typography} from "@material-ui/core";
+import {Grid, Typography} from "@material-ui/core";
 import Typical from 'react-typical';
 import questions from '../../utils/animatedQuestions';
+import Trending from "./Trending";
 
 const useStyles = makeStyles({
     root: {
@@ -12,6 +12,9 @@ const useStyles = makeStyles({
     },
     animatedType: {
         fontSize: 25
+    },
+    body: {
+        marginTop: 60
     }
 });
 
@@ -26,6 +29,14 @@ const Landing = () => {
                 wrapper={"p"}
                 className={classes.animatedType}
             />
+            <Grid container className={classes.body}>
+                <Grid item xs={6}>
+
+                </Grid>
+                <Grid item xs={6}>
+                    <Trending/>
+                </Grid>
+            </Grid>
         </div>
     );
 };
