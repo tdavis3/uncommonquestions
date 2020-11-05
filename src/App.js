@@ -24,27 +24,17 @@ function App() {
         <Router>
             <div className={classes.root}>
                 <Switch>
-                    <Route path={"/"}>
-                        <Navbar/>
-                    </Route>
+                    <Route path={"/"} component={Navbar}/>
                 </Switch>
                 <section>
                     <Switch>
-                        <Route exact path={"/"}>
-                            <Landing/>
-                        </Route>
-                        <Route exact path={"/signup"}>
-                            <SignUp/>
-                        </Route>
-                        <Route path="*">
-                            <NotFoundPage/>
-                        </Route>
+                        <Route exact path={"/"} component={Landing}/>
+                        <Route exact path={"/signup"} component={SignUp}/>
+                        <Route path="*" component={NotFoundPage}/>
                     </Switch>
                 </section>
                 <Switch>
-                    <Route path={"/"}>
-                        <Footer/>
-                    </Route>
+                    <Route path={"/"} component={Footer}/>
                 </Switch>
             </div>
         </Router>
