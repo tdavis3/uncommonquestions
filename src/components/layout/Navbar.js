@@ -55,7 +55,7 @@ const SignUpButton = () => {
 const Navbar = () => {
     const classes = useStyles();
     return (
-        <div className={classes.root}>
+        <div>
             <AppBar position={"sticky"} color={"transparent"} style={{boxShadow: 'none'}}>
                 <Toolbar className={classes.toolbar}>
                     <Box display={"flex"} className={classes.logo}>

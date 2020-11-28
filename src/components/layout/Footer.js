@@ -37,7 +37,7 @@ function Copyright() {
 function Contact() {
     const classes = useStyles();
     return (
-        <a href={"mailto: info@uncommonquestions.org"} className={classes.contact}>info@uncommonquestions.org</a>
+        <a href={"mailto: info@uncommonqs.com"} className={classes.contact}>info@uncommonqs.com</a>
     );
 }
 

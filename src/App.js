@@ -7,6 +7,7 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import NotFoundPage from "./components/NotFoundPage";
 import SignUp from "./components/auth/SignUp";
+import Deck from "./components/Pitch/Deck";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -30,6 +31,7 @@ function App() {
                     <Switch>
                         <Route exact path={"/"} component={Landing}/>
                         <Route exact path={"/signup"} component={SignUp}/>
+                        <Route exact path={"/pitch"} component={Deck}/>
                         <Route path="*" component={NotFoundPage}/>
                     </Switch>
                 </section>
